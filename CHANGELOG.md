@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Copicake/copicake-js/compare/v1.0.0...v1.0.1) (2022-03-15)
+
+
+### Bug Fixes
+
+* added publish command ([fa08ff7](https://github.com/Copicake/copicake-js/commit/fa08ff7ad619aefee72e167bf00afef4c600defe))
+
 # 1.0.0 (2022-03-15)
 
 
