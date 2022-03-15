@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Copicake SDK",
   "author": "EragonJ <eragonj@eragonj.me>",
-  "repository": "https://github.com/Copicake/copicake-js.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Copicake/copicake-js.git"
+  },
   "license": "MIT",
   "keywords": [
     "copicake",
