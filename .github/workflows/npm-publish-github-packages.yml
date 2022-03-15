@@ -19,11 +19,13 @@ jobs:
       - run: npm ci
       - run: npm test
 
-  publish-gpr:
+  publish-to-github-package-registry:
     needs: build
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
+      issues: write
+      pull-requests: write
       packages: write
     steps:
       - uses: actions/checkout@v2
@@ -36,6 +38,3 @@ jobs:
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
