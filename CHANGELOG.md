@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Copicake/copicake-js/compare/v1.0.1...v1.0.2) (2022-04-21)
+
+
+### Bug Fixes
+
+* changed a lot to make js library real ([b27aa91](https://github.com/Copicake/copicake-js/commit/b27aa9131a86b08cd4207e53acab17a4e7efcdf5))
+
 ## [1.0.1](https://github.com/Copicake/copicake-js/compare/v1.0.0...v1.0.1) (2022-03-15)
 
 
