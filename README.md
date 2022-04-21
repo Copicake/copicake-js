@@ -7,41 +7,13 @@
 
 # Installations
 
-Because we host our library on GitHub, so you need to change your settings to use our library.
-
 ## For npm user
-
-Change your `.npmrc` file to :
-
-```bash
-# .npmrc
-
-# normal npm registry
-registry=https://registry.npmjs.org
-
-# install copicake from GitHub registry
-@copicake:registry=https://npm.pkg.github.com
-```
-
-And then install copicake:
 
 ```bash
 npm install --save @copicake/copicake-js
 ```
 
 ## For yarn user
-
-Add the following settings into your `.yarnrc` file:
-
-```bash
-# normal npm registry
-registry "https://registry.npmjs.org"
-
-# install copicake from GitHub registry
-"@copicake:registry" "https://npm.pkg.github.com"
-```
-
-And then install copicake:
 
 ```bash
 yarn add @copicake/copicake-js --dev
