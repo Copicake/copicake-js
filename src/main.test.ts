@@ -1,9 +1,11 @@
-import { greet } from './main'
+import Copicake from "./main";
 
-test('the data is peanut butter', () => {
-  expect(1).toBe(1)
-});
+describe("main", () => {
+  it("should create copicake instance", () => {
+    const copicake = new Copicake({
+      apiKey: "test",
+    });
 
-test('greeting', () => {
-  expect(greet('Foo')).toBe('Hello Foo')
+    expect(copicake).toBeInstanceOf(Copicake);
+  });
 });
