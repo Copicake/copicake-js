@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/Copicake/copicake-js/compare/v1.0.3...v1.0.4) (2022-05-18)
+
+
+### Bug Fixes
+
+* updated README ([87a353c](https://github.com/Copicake/copicake-js/commit/87a353c863cca292fd315ee3ae1a4056c4ee550d))
+
 ## [1.0.3](https://github.com/Copicake/copicake-js/compare/v1.0.2...v1.0.3) (2022-04-21)
 
 
