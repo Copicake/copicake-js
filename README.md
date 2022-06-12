@@ -40,7 +40,7 @@ copicake.image
   .create({
     template_id: "YOU_TEMPLATE_ID",
     changes: [
-      { name: "text-9so09m", text: "hello world", color: "#ff0000" },
+      { name: "text-9so09m", text: "hello world", fill: "#ff0000" },
       { name: "image-yeavh7", src: "https://your_website.com/test.png" },
     ],
     options: {

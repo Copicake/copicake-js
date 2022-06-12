@@ -7,7 +7,7 @@ interface IProps {
 class Copicake {
   private apiKey: string;
 
-  public image;
+  public image: Image;
 
   constructor({ apiKey }: IProps) {
     this.apiKey = apiKey;

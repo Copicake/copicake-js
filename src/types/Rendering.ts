@@ -1,18 +1,26 @@
-export interface Change {
+export type Change = ImageChange | TextChange;
+
+export interface ImageChange {
+  name: string;
+  src?: string;
+}
+
+export interface TextChange {
   name: string;
   text?: string;
-  color?: string;
-  src?: string;
+  fill?: string;
 }
 
 export interface Options {
   webhook_url: string;
 }
 
+export type Status = "processing" | "success" | "error";
+
 export interface Rendering {
   id: string;
   type: "image";
-  status: "success" | "processing" | "failed";
+  status: Status;
   changes?: Change[];
   options?: Options;
   template_id: string;
