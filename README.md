@@ -33,7 +33,11 @@ const copicake = new Copicake({
 });
 ```
 
-## Create an image
+## Image
+
+### Create an image
+
+#### create(data: `Object`)
 
 ```js
 copicake.image
@@ -58,7 +62,9 @@ copicake.image
   });
 ```
 
-## Get an image
+### Get an image
+
+#### get(renderingId: `string`)
 
 ```js
 const renderingId = `YOUR_RENDERING_ID`;
@@ -76,6 +82,8 @@ copicake.image
 ```
 
 ### Get an image (long polling)
+
+#### getUntilFinished(renderingId: `string`)
 
 Sometimes you may notice that your image is still under `processing` state, this is because the image is still being processed in the background by our servers.
 
@@ -99,5 +107,30 @@ copicake.image
   .catch((error) => {
     // For more details, please check https://docs.copicake.com/#/errors
     console.error(error);
+  });
+```
+
+## Utils
+
+### Create a temporary image for later use
+
+#### uploadTempImage(file: `File | Buffer`, type: `"png" | "gif" | "jpg" | "jpeg"`)
+
+If you don't have a server to host images, we provided a handy way to let you upload a temporary image to our s3 and you can use the returned URL for later use.
+
+1. [File](https://developer.mozilla.org/en-US/docs/Web/API/File) on Browser
+2. [Buffer](https://nodejs.org/api/buffer.html#buffer) on Node.js
+
+**P.S. Every temporary image will be removed within 5 minutes to avoid abuse**
+
+```js
+copicake.utils
+  .uploadTempImage(file, "png")
+  .then((result) => {
+    // result === https://s3.ap-northeast-1.amazonaws.com/copicake/temp/ak0zixy6rewsh6vaamzi.png
+    console.log(result);
+  })
+  .catch((error) => {
+    console.log(error);
   });
 ```

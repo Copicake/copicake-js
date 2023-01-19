@@ -3,7 +3,7 @@ import { Rendering, Change, Options } from "../types/Rendering";
 import { IMAGE_API_END_POINT, RETRY_TIMEOUT } from "./constant";
 
 // Bug: Failed to execute 'fetch' on 'Window': Illegal invocation
-const fetch = unfetch.bind(self);
+const fetch = unfetch.bind(globalThis);
 const MAX_RETRY_TIMES = 10;
 
 interface ICreate {
