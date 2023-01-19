@@ -16,7 +16,7 @@ npm install --save @copicake/copicake-js
 ## For yarn user
 
 ```bash
-yarn add @copicake/copicake-js --dev
+yarn add @copicake/copicake-js
 ```
 
 # Usage
@@ -89,7 +89,7 @@ Sometimes you may notice that your image is still under `processing` state, this
 
 In this way, we provide another handy method called `getUntilFinished()` to get the image until the image is ready.
 
-Internally, this is just a wrapper of `get()` method with built-in retry mechanism. If after MAX_RETRY_TIMES and the image is still under `processing` state, we will throw an error (500) to let you know.
+Internally, this is just a wrapper of `get()` method with built-in retry mechanism. If after `MAX_RETRY_TIMES` and the image is still under `processing` state, we will throw an error (500) to let you know.
 
 ```js
 const renderingId = `YOUR_RENDERING_ID`;

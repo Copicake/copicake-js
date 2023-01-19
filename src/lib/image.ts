@@ -1,10 +1,13 @@
 import unfetch from "isomorphic-unfetch";
 import { Rendering, Change, Options } from "../types/Rendering";
-import { IMAGE_API_END_POINT, RETRY_TIMEOUT } from "./constant";
+import {
+  IMAGE_API_END_POINT,
+  RETRY_TIMEOUT,
+  MAX_RETRY_TIMES,
+} from "./constant";
 
 // Bug: Failed to execute 'fetch' on 'Window': Illegal invocation
-const fetch = unfetch.bind(globalThis);
-const MAX_RETRY_TIMES = 10;
+const fetch = unfetch.bind(self);
 
 interface ICreate {
   template_id: string;
