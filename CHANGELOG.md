@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Copicake/copicake-js/compare/v1.1.0...v1.1.1) (2023-01-19)
+
+
+### Bug Fixes
+
+* update notices of uploadTempImage ([91139e4](https://github.com/Copicake/copicake-js/commit/91139e4eb4673b9e7aeae2f3468ca32e85fce11d))
+
 # [1.1.0](https://github.com/Copicake/copicake-js/compare/v1.0.6...v1.1.0) (2023-01-19)
 
 
