@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/Copicake/copicake-js/compare/v1.0.6...v1.1.0) (2023-01-19)
+
+
+### Bug Fixes
+
+* bump version ([b1222db](https://github.com/Copicake/copicake-js/commit/b1222dbe3d977d7e4b2883d9e2674e48216fa993))
+
+
+### Features
+
+* added utils instance ([96711c5](https://github.com/Copicake/copicake-js/commit/96711c529a5226217a8e6683d860d0f978bf839f))
+
 ## [1.0.6](https://github.com/Copicake/copicake-js/compare/v1.0.5...v1.0.6) (2022-06-12)
 
 
