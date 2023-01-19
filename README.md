@@ -121,7 +121,7 @@ If you don't have a server to host images, we provided a handy way to let you up
 1. [File](https://developer.mozilla.org/en-US/docs/Web/API/File) on Browser
 2. [Buffer](https://nodejs.org/api/buffer.html#buffer) on Node.js
 
-**P.S. Every temporary image will be removed within 5 minutes to avoid abuse**
+**P.S. Every temporary image will be removed within 1 day to avoid abuse**
 
 ```js
 copicake.utils
