@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/Copicake/copicake-js/compare/v1.1.1...v1.1.2) (2023-02-09)
+
+
+### Bug Fixes
+
+* removed hardcoded url ([b2b6fb3](https://github.com/Copicake/copicake-js/commit/b2b6fb3f60c5a8f508deb4917699aa277bd9a4e0))
+
 ## [1.1.1](https://github.com/Copicake/copicake-js/compare/v1.1.0...v1.1.1) (2023-01-19)
 
 
