@@ -52,12 +52,9 @@ copicake.image
     },
   })
   .then((response) => {
-    // You will get a rendering response with processing state.
-    // https://docs.copicake.com/#/api/v1/image/create?id=response
     console.log(response);
   })
   .catch((error) => {
-    // For more details, please check https://docs.copicake.com/#/errors
     console.error(error);
   });
 ```
@@ -72,11 +69,9 @@ const renderingId = `YOUR_RENDERING_ID`;
 copicake.image
   .get(renderingId)
   .then((response) => {
-    // For more details, please check https://docs.copicake.com/#/api/rendering
     console.log(response);
   })
   .catch((error) => {
-    // For more details, please check https://docs.copicake.com/#/errors
     console.error(error);
   });
 ```
@@ -97,7 +92,6 @@ const renderingId = `YOUR_RENDERING_ID`;
 copicake.image
   .getUntilFinished(renderingId)
   .then((response) => {
-    // For more details, please check https://docs.copicake.com/#/api/rendering
     if (response.status === "success") {
       // do something
     } else if (response.status === "failed") {
@@ -105,7 +99,6 @@ copicake.image
     }
   })
   .catch((error) => {
-    // For more details, please check https://docs.copicake.com/#/errors
     console.error(error);
   });
 ```
