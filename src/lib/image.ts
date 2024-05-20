@@ -34,13 +34,11 @@ class Image implements IImage {
       headers: {
         Authorization: `Bearer ${this.apiKey}`,
       },
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .then((response) => {
-        return response.data;
-      });
+    }).then((response) => {
+      return response.json();
+    }).then((response) => {
+      return response.data;
+    });
   }
 
   getUntilFinished(renderingId: string, retried = 0): Promise<Rendering> {
@@ -71,13 +69,11 @@ class Image implements IImage {
         Authorization: `Bearer ${this.apiKey}`,
       },
       body: JSON.stringify(data),
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .then((response) => {
-        return response.data;
-      });
+    }).then((response) => {
+      return response.json();
+    }).then((response) => {
+      return response.data;
+    });
   }
 }
 
