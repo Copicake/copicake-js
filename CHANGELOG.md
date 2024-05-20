@@ -1,3 +1,11 @@
+## [1.1.3](https://github.com/Copicake/copicake-js/compare/v1.1.2...v1.1.3) (2024-05-20)
+
+
+### Bug Fixes
+
+* changed lint rule for dot annotation ([6a789bc](https://github.com/Copicake/copicake-js/commit/6a789bc69fc5015f64a59f32ab4ce97c4aebbe99))
+* update lock file ([6f40af9](https://github.com/Copicake/copicake-js/commit/6f40af9fc941beb3dfe35eb8c8ebb7e745c8cd25))
+
 ## [1.1.2](https://github.com/Copicake/copicake-js/compare/v1.1.1...v1.1.2) (2023-02-09)
 
 
