@@ -1,3 +1,11 @@
+## [1.1.4](https://github.com/Copicake/copicake-js/compare/v1.1.3...v1.1.4) (2024-06-05)
+
+
+### Bug Fixes
+
+* added new image format ([58215df](https://github.com/Copicake/copicake-js/commit/58215df7bc2f42999f75d099e2ac6c2713086032))
+* bump version ([76dc6ef](https://github.com/Copicake/copicake-js/commit/76dc6ef7b8a1f08ca289b25872b28c3f7b9d662a))
+
 ## [1.1.3](https://github.com/Copicake/copicake-js/compare/v1.1.2...v1.1.3) (2024-05-20)
 
 
