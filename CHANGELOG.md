@@ -1,3 +1,11 @@
+## [1.1.5](https://github.com/Copicake/copicake-js/compare/v1.1.4...v1.1.5) (2024-06-05)
+
+
+### Bug Fixes
+
+* added prepublish command ([ad79c80](https://github.com/Copicake/copicake-js/commit/ad79c807c94504b54a8ab454977233483ec231f3))
+* bump version ([5a86aba](https://github.com/Copicake/copicake-js/commit/5a86abab81c0a5634961c925f9a54799f81d137c))
+
 ## [1.1.4](https://github.com/Copicake/copicake-js/compare/v1.1.3...v1.1.4) (2024-06-05)
 
 
