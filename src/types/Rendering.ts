@@ -1,5 +1,7 @@
 export type Change = ImageChange | TextChange;
 
+export type ImageFormat = "png" | "jpg";
+
 export interface ImageChange {
   name: string;
   src?: string;
@@ -12,7 +14,8 @@ export interface TextChange {
 }
 
 export interface Options {
-  webhook_url: string;
+  format?: ImageFormat;
+  webhook_url?: string;
 }
 
 export type Status = "processing" | "success" | "error";
