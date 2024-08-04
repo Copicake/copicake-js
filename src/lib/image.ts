@@ -1,5 +1,5 @@
 import unfetch from "isomorphic-unfetch";
-import { Rendering, Change, Options } from "../types/Rendering";
+import { Rendering, AnyChange, Options } from "../types/Rendering";
 import {
   IMAGE_API_END_POINT,
   RETRY_TIMEOUT,
@@ -11,7 +11,7 @@ const fetch = unfetch.bind(self);
 
 interface ICreate {
   template_id: string;
-  changes: Change[];
+  changes: AnyChange[];
   options?: Options;
 }
 
@@ -34,11 +34,13 @@ class Image implements IImage {
       headers: {
         Authorization: `Bearer ${this.apiKey}`,
       },
-    }).then((response) => {
-      return response.json();
-    }).then((response) => {
-      return response.data;
-    });
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((response) => {
+        return response.data;
+      });
   }
 
   getUntilFinished(renderingId: string, retried = 0): Promise<Rendering> {
@@ -69,11 +71,13 @@ class Image implements IImage {
         Authorization: `Bearer ${this.apiKey}`,
       },
       body: JSON.stringify(data),
-    }).then((response) => {
-      return response.json();
-    }).then((response) => {
-      return response.data;
-    });
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((response) => {
+        return response.data;
+      });
   }
 }
 

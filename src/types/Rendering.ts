@@ -1,17 +1,12 @@
-export type Change = ImageChange | TextChange;
-
 export type ImageFormat = "png" | "jpg";
 
-export interface ImageChange {
+export type BaseChange = {
   name: string;
-  src?: string;
-}
-
-export interface TextChange {
-  name: string;
-  text?: string;
   fill?: string;
-}
+  stroke?: string;
+};
+
+export type AnyChange = BaseChange & Record<string, unknown>;
 
 export interface Options {
   format?: ImageFormat;
@@ -24,7 +19,7 @@ export interface Rendering {
   id: string;
   type: "image";
   status: Status;
-  changes?: Change[];
+  changes?: AnyChange[];
   options?: Options;
   template_id: string;
   permanent_url: string;
